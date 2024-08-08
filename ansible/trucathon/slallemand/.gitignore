@@ -1,0 +1,4 @@
+vault.yaml
+venv
+ansible-vault-password
+output_dir

@@ -1,0 +1,16 @@
+cloud_provider: ec2
+aws_region: eu-west-3
+env_type: ocp4-cluster
+software_to_deploy: openshift4
+purpose: development
+repo_method: rhn
+infra_workloads: 
+ - ocp4_workload_authentication
+ - ocp4_workload_project_request_template
+ - ocp4_workload_opentlc_production
+ - ocp4_workload_machinesets
+ - ocp4_workload_logging
+ - ocp4_workload_le_certificates
+agnosticd_aws_capacity_reservation_enable: false
+ocp4_installer_version: 4.14
+output_dir: '{{ lookup("env","PWD") }}/trucathon/nmasse/output_dir'
